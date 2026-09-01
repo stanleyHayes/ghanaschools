@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["product", "sources"],
+  "properties": {
+    "product": { "type": "string", "minLength": 1 },
+    "sources": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["id", "authority", "title", "licence", "publicationDecision"] } }
+  }
+}

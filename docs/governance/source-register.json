@@ -1,0 +1,16 @@
+{
+  "$schema": "./source-register.schema.json",
+  "product": "ghanaschools",
+  "sources": [
+    {
+      "id": "definition-required",
+      "authority": null,
+      "title": "Replace after source review",
+      "url": null,
+      "licence": "unknown",
+      "publicationDecision": "blocked",
+      "reviewedAt": null,
+      "notes": "Unknown licence blocks canonical publication."
+    }
+  ]
+}
