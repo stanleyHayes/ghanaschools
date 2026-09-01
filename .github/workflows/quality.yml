@@ -9,11 +9,22 @@ permissions:
   contents: read
 
 jobs:
-  foundation:
+  quality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23.x"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.17.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.4"
-      - run: ruby scripts/validate.rb
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check

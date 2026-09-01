@@ -1,6 +1,8 @@
 # GhanaSchools
 
-`GhanaSchools` is an independent Digital Ghana public-infrastructure product. Its canonical public home is `https://schools.digitalghana.dev` after production evidence supports a lifecycle transition.
+`GhanaSchools` is an independent Digital Ghana public-infrastructure registry. Its first release is a provenance-complete, GTEC-listed public-university subset with stable IDs and pinned GhanaGeo place references. Canonical web and API surfaces remain pre-release until production evidence supports a lifecycle transition.
+
+The beta does not claim comprehensive school coverage, permanent accreditation, rankings or admissions authority.
 
 ## Before implementation
 
@@ -11,4 +13,4 @@
 
 ## Verification
 
-Run `ruby scripts/validate.rb`. Product-specific checks are added to the same quality workflow as implementation lands.
+Run `pnpm install` and `pnpm check` for governance validation, Go unit/API tests and vetting, dataset invariants, TypeScript checks, and the production web build.

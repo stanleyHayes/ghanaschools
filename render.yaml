@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ghanaschools-api
+    runtime: go
+    plan: free
+    region: frankfurt
+    buildCommand: go build -trimpath -o bin/ghanaschools-api ./cmd/api
+    startCommand: ./bin/ghanaschools-api
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: ALLOWED_ORIGIN
+        value: https://schools.digitalghana.dev

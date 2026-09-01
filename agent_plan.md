@@ -1,21 +1,21 @@
 # GhanaSchools execution ledger
 
-Status: Planning  
+Status: Implementation — beta candidate
 Canonical hostname: `schools.digitalghana.dev`
 
 ## Product definition gate
 
-- [ ] Problem, users and non-goals approved.
-- [ ] Source authority and licence review complete.
-- [ ] Domain model and deterministic acceptance fixtures approved.
-- [ ] Security, privacy and misuse risks reviewed.
-- [ ] API/UI scope and deployment boundary approved.
+- [x] Problem, users and non-goals approved in the supplied brief and `docs/product-definition.md`.
+- [x] GTEC/GhanaGeo reference rights and publication boundaries recorded; no source document or bulk external dataset is redistributed.
+- [x] Domain model, field provenance and deterministic fixtures implemented and passing.
+- [x] Privacy, child-safety and misuse review complete; no personal, student, contact, admissions or inferred quality data is published.
+- [x] Independent web/API boundary, constrained REST/GraphQL and TypeScript client scope approved.
 
 ## Live task board
 
 | ID | Task | Status | Owner | Dependency | Evidence |
 |---|---|---|---|---|---|
-| P-0.1 | Product definition and source review | In progress | Codex | — | Reviewing the approved portfolio brief, official education directories, publication rights, child-safety constraints and minimum useful seed |
-| P-0.2 | Domain contracts and fixtures | Blocked | Unassigned | P-0.1 | No implementation before definition gate |
-| P-1.1 | Implementation | Blocked | Unassigned | P-0.2 | Tests must prove domain behavior |
+| P-0.1 | Product definition and source review | Done | Codex | — | GTEC public-university source, pinned GhanaGeo reference and owner brief recorded with explicit reference-only decisions |
+| P-0.2 | Domain contracts and fixtures | Done | Codex | P-0.1 | 16-record provenance-complete dataset; stable-ID, alias, Geo-reference, duplicate and sensitive-field invariants pass |
+| P-1.1 | Verified-subset implementation | In progress | Codex | P-0.2 | Go REST/GraphQL, TypeScript client and searchable Next.js directory build pass; production browser/deployment evidence remains |
 | P-2.1 | Production release | Blocked | Unassigned | P-1.1 | Smoke, security, rollback and operations evidence required |

@@ -1,0 +1,2 @@
+type School { id: ID!, name: String!, aliases: [String!]!, type: String!, ownership: String!, locality: String!, region: String!, ghanaGeoPlaceId: ID!, locationNote: String, sources: [ID!]! }
+type Query { schools(q: String, region: String): [School!]! }

@@ -1,5 +1,7 @@
-# Contracts
+# GhanaSchools public contracts
 
-Place versioned public contracts here only after the product definition gate passes. CI must lint committed contracts, detect generated-artifact drift, exercise representative fixtures, and reject breaking changes against the default branch.
+- `openapi.yaml` defines the beta REST surface.
+- `graphql/schema.graphql` defines the constrained read-only GraphQL query.
+- `../sdk/typescript/index.ts` is the dependency-free TypeScript client.
 
-Do not invent REST, GraphQL, event, or SDK parity merely to satisfy a template. Choose interfaces from demonstrated consumers and document the decision.
+All responses expose the dataset version. “Listed by source” is time-bounded provenance, not a permanent accreditation guarantee.

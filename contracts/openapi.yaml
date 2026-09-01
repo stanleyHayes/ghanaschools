@@ -1,0 +1,28 @@
+openapi: 3.1.0
+info:
+  title: GhanaSchools API
+  version: 2026.09.01-beta.1
+  description: Provenance-complete, deliberately limited education-institution registry.
+servers:
+  - url: https://api-schools.digitalghana.dev
+paths:
+  /health:
+    get:
+      operationId: health
+      responses: { "200": { description: Healthy } }
+  /v1/schools:
+    get:
+      operationId: searchSchools
+      parameters:
+        - { name: q, in: query, schema: { type: string } }
+        - { name: region, in: query, schema: { type: string } }
+        - { name: type, in: query, schema: { type: string } }
+      responses: { "200": { description: Versioned search result } }
+  /v1/schools/{id}:
+    get:
+      operationId: getSchool
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        "200": { description: Stable school record }
+        "404": { description: Unknown stable ID }

@@ -3,14 +3,34 @@
   "product": "ghanaschools",
   "sources": [
     {
-      "id": "definition-required",
-      "authority": null,
-      "title": "Replace after source review",
+      "id": "gtec-current-institutions",
+      "authority": "Ghana Tertiary Education Commission",
+      "title": "Current Institutions — Public Universities",
+      "url": "https://www.gtec.edu.gh/download/file/GHANA%20TERTIARY%20EDUCATION%20COMMISSION%20CURRENT%20INSTITUTIONS%20.pdf",
+      "licence": "Copyright not expressly stated; limited public facts referenced with attribution, source document not redistributed",
+      "publicationDecision": "reference-only-verified-subset",
+      "reviewedAt": "2026-09-01",
+      "notes": "Supports the public-university name and location subset only. Accreditation must be rechecked with GTEC; no programme claim is made."
+    },
+    {
+      "id": "ghanageo-2026.08.3-ulid",
+      "authority": "GhanaGeo open dataset",
+      "title": "GhanaGeo place reference dataset 2026.08.3-ulid",
+      "url": "https://github.com/stanleyHayes/geoghana/tree/324916ee6e5221a183095348962ff6c7c2e29d98/packages/data",
+      "licence": "Repository licence and upstream provenance apply",
+      "publicationDecision": "pinned-reference-identifiers",
+      "reviewedAt": "2026-09-01",
+      "notes": "Only pinned place identifiers for named institution locations are referenced. Campus coordinates are deliberately not inferred."
+    },
+    {
+      "id": "portfolio-brief",
+      "authority": "Digital Ghana project owner",
+      "title": "Ghana Digital Public Infrastructure Project Portfolio",
       "url": null,
-      "licence": "unknown",
-      "publicationDecision": "blocked",
-      "reviewedAt": null,
-      "notes": "Unknown licence blocks canonical publication."
+      "licence": "Project input supplied by owner",
+      "publicationDecision": "approved-for-requirements",
+      "reviewedAt": "2026-09-01",
+      "notes": "Defines registry scope, provenance, stable identity, search and acceptance requirements."
     }
   ]
 }

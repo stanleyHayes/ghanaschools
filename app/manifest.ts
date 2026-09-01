@@ -1,0 +1,1 @@
+import type{MetadataRoute}from"next";export default function manifest():MetadataRoute.Manifest{return{name:"GhanaSchools",short_name:"GhanaSchools",description:"Source-linked Ghana education institution registry.",start_url:"/",display:"standalone",background_color:"#f5f2e9",theme_color:"#17233d",icons:[{src:"/icon.svg",sizes:"any",type:"image/svg+xml"}]}}
