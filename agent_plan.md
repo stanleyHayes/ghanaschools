@@ -15,7 +15,7 @@ Canonical hostname: `schools.digitalghana.dev`
 
 | ID | Task | Status | Owner | Dependency | Evidence |
 |---|---|---|---|---|---|
-| P-0.1 | Product definition and source review | Ready | Unassigned | — | Product-specific source record required |
+| P-0.1 | Product definition and source review | In progress | Codex | — | Reviewing the approved portfolio brief, official education directories, publication rights, child-safety constraints and minimum useful seed |
 | P-0.2 | Domain contracts and fixtures | Blocked | Unassigned | P-0.1 | No implementation before definition gate |
 | P-1.1 | Implementation | Blocked | Unassigned | P-0.2 | Tests must prove domain behavior |
 | P-2.1 | Production release | Blocked | Unassigned | P-1.1 | Smoke, security, rollback and operations evidence required |
