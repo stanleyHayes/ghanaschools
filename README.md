@@ -1,6 +1,9 @@
 # GhanaSchools
 
-`GhanaSchools` is an independent Digital Ghana public-infrastructure registry. Its first release is a provenance-complete, GTEC-listed public-university subset with stable IDs and pinned GhanaGeo place references. Canonical web and API surfaces remain pre-release until production evidence supports a lifecycle transition.
+`GhanaSchools` is an independent Digital Ghana public-infrastructure registry. Its first release is a provenance-complete, GTEC-listed public-university subset with stable IDs and pinned GhanaGeo place references.
+
+- Web: [schools.digitalghana.dev](https://schools.digitalghana.dev)
+- API: [api-schools.digitalghana.dev](https://api-schools.digitalghana.dev/health)
 
 The beta does not claim comprehensive school coverage, permanent accreditation, rankings or admissions authority.
 
